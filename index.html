@@ -14,17 +14,19 @@
   <body>
     <header class="header">
       <div class="header__menu">
-        <p>главная</p> 
+        <a href="#">главная</a> 
         <div class="header__menu_marker">
           <img class="header__img_list_marker" src="images/list_marker.svg">
-          <p class="border-bottom">посмотреть лоты</p> 
+          <a href="#" class="border-bottom">посмотреть лоты</a> 
         </div> 
         <div class="header__menu_marker">
           <img class="header__img_list_marker" src="images/list_marker.svg">
-          <p class="border-bottom">об аукционе</p> 
+          <a href="#" class="border-bottom">об аукционе</a> 
         </div> 
       </div>
-      <img class="header__img_logo_black" src="images/logo-black.svg">
+      <a href="#cover_id" >
+        <img class="header__img_logo_black" src="images/logo-black.svg" alt="Логотип">
+      </a>
       <div class="header__address">
         <address class="address">
           <a class="border-bottom" href="tel:+99995555555">+9 999 555 5555</a>
@@ -34,25 +36,27 @@
       </div>
     </header>
     <main>
-      <section class="overlay">      
-        <p class="overlay__center_text">
-          <span class="overlay__center_text_1">ОНО</span>
-          <span class="overlay__center_text_2">ТЕБЕ</span>
-          <span class="overlay__center_text_3">НАДО</span>
+      <section class="cover" id="cover_id">      
+        <p class="cover__title">
+          <span class="cover__title_aligned_text">ОН<span class="cover__title_aligned_symbol"> O</span> </span>
+          <span class="cover__title_aligned_text_center">ТЕБ<span class="cover__title_aligned_symbol"> E</span></span>
+          <span class="cover__title_aligned_text_right"><span class="cover__title_aligned_text_right_symbol">Н </span>АДО</span>
         </p>
-        <div class="overlay__bottom_text">
-          <div class="overlay__bottom_description">
-            <p class="overlay__bottom_description_align">Аукцион вещей, в которые никто не верил</p>
+        <div class="cover__description">
+          <div class="cover__description-text">
+            <p class="letter-spacing-extended">Аукцион вещей, в которые никто не верил</p>
           </div>
-          <div class="overlay__bottom_button">Сделать ставку</div>
+          <button class="cover__description_button">Сделать ставку</button>
         </div>
+        <img class="cover_img" src="images/cover.jpg" alt="Фоновая картинка">
       </section>
-      <section>      
+      <section class="lots">      
+        <p class="lots_title">лоты</p> 
       </section>
-      <section>      
+      <section class="about">      
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div></div>
       <div></div>
       <div></div>

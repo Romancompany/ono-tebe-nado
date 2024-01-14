@@ -1,3 +1,10 @@
+/* стили для всех блоков */
 .border-bottom {
   border-bottom: 1px solid black;
 }
+
+.letter-spacing-extended {
+    text-align-last: justify;
+    width: 100%;
+}
+  
