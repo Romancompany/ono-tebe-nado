@@ -1,12 +1,12 @@
 /* стили для блока cover */
 .cover {
   position: relative;
-  color: #fff; 
+  color: #fff;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
   height: 757px;
-  background-color: rgb(0 0 0 /0.6);  
+  background-color: rgb(0 0 0 /0.6);
 }
 
 .cover__title {
@@ -17,7 +17,6 @@
   font-size: 100px;
   font-weight: 700;
   line-height: 115%;
-  letter-spacing: 60px;
   height: 100%;
   width: 100%;
   letter-spacing: 30px;
@@ -71,7 +70,7 @@
   font-weight: 500;
   min-width: 256px;
   height: 51px;
-  background-color: transparent; 
+  background-color: transparent;
   color: #fff;
   font-size: 22px;
   text-transform: uppercase;

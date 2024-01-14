@@ -3,7 +3,6 @@
   margin-top: 180px;
   padding: 0px 24px 0px;
   width: 100%;
-
   display: grid;
   grid-template-columns: 334px auto;
   grid-template-rows: repeat(2, auto);
@@ -55,11 +54,11 @@
 
 .about_text_up {
   margin-top: 8px;
-  letter-spacing: 0.12px; 
+  letter-spacing: 0.12px;
 }
 
 .about_text_down {
   margin-top: 25px;
   padding-right: 1px;
-  letter-spacing: 0.06px; 
+  letter-spacing: 0.06px;
 }
