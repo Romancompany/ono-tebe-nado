@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/style_lib.css">
     <link rel="stylesheet" href="styles/style_header.css">
     <link rel="stylesheet" href="styles/style_cover.css">
+    <link rel="stylesheet" href="styles/style_lots.css">
   </head>
   <body>
     <header class="header">
@@ -38,20 +39,38 @@
     <main>
       <section class="cover" id="cover_id">      
         <p class="cover__title">
-          <span class="cover__title_aligned_text">ОН<span class="cover__title_aligned_symbol"> O</span> </span>
+          <span>ОН<span class="cover__title_aligned_symbol"> O</span> </span>
           <span class="cover__title_aligned_text_center">ТЕБ<span class="cover__title_aligned_symbol"> E</span></span>
           <span class="cover__title_aligned_text_right"><span class="cover__title_aligned_text_right_symbol">Н </span>АДО</span>
         </p>
         <div class="cover__description">
           <div class="cover__description-text">
-            <p class="letter-spacing-extended">Аукцион вещей, в которые никто не верил</p>
+            <p class="text-align-last_justify">Аукцион вещей, в которые никто не верил</p>
           </div>
           <button class="cover__description_button">Сделать ставку</button>
         </div>
-        <img class="cover_img" src="images/cover.jpg" alt="Фоновая картинка">
+        <img class="overlay" src="images/cover.jpg" alt="Фоновая картинка">
       </section>
       <section class="lots">      
-        <p class="lots_title">лоты</p> 
+        <p class="lots__heading">лоты</p> 
+        <ul class="lots__card-list">
+          <li class="lots__card-list-item">
+              <a class="lots__card_link" href="#">Фильм режиссёра, который бросил киношколу</a>
+              <article class="lots__card_article">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</article>
+              <img class="overlay" src="images/card-lot-01.jpg" alt="Фоновая картинка">
+          </li>
+          <li class="lots__card-list-item">
+              <a class="lots__card_link" href="#">Книга, где описан один скучный день из жизни рекламного агента</a>
+              <article class="lots__card_article">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</article>
+              <img class="overlay" src="images/card-lot-02.jpg" alt="Фоновая картинка">
+          </li>
+          <li class="lots__card-list-item">
+              <a class="lots__card_link" href="#">Картина, которую повторит даже 5-летний сын маминой подруги</a>
+              <article class="lots__card_article">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков<span class="letter-spacing_3px">...</span> Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</article>
+              <img class="overlay" src="images/card-lot-03.jpg" alt="Фоновая картинка">
+          </li>
+        </ul>
+        <p class="lots__look-more-link"><a href="#" class="border-bottom">посмотреть больше</a></p>
       </section>
       <section class="about">      
       </section>

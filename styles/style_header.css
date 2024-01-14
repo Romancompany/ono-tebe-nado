@@ -5,8 +5,6 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-
-  /*background-color: blue;*/
 }
 
 .header__menu {
@@ -16,9 +14,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-font-size: 18px;
-font-weight: 400;
-letter-spacing: 0.18px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.18px;
 }
 
 .header__menu_marker {
