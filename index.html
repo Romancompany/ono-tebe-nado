@@ -12,25 +12,26 @@
     <link rel="stylesheet" href="styles/style_cover.css">
     <link rel="stylesheet" href="styles/style_lots.css">
     <link rel="stylesheet" href="styles/style_about.css">
+    <link rel="stylesheet" href="styles/style_footer.css">
   </head>
   <body>
     <header class="header">
-      <div class="header__menu">
+      <nav class="header__menu">
         <a href="#">главная</a> 
         <div class="header__menu_marker">
           <img class="header__img_list_marker" src="images/list_marker.svg" alt="разделитель">
-          <a href="#" class="border-bottom">посмотреть лоты</a> 
+          <a href="#lots_id" class="border-bottom">посмотреть лоты</a> 
         </div> 
         <div class="header__menu_marker">
           <img class="header__img_list_marker" src="images/list_marker.svg" alt="разделитель">
-          <a href="#" class="border-bottom">об аукционе</a> 
+          <a href="#about_id" class="border-bottom">об аукционе</a> 
         </div> 
-      </div>
+      </nav>
       <a href="#cover_id" >
         <img class="header__img_logo_black" src="images/logo-black.svg" alt="Логотип">
       </a>
       <div class="header__address">
-        <address class="address">
+        <address class="address address_header_left">
           <a class="border-bottom" href="tel:+99995555555">+9 999 555 5555</a>
           <a class="border-bottom" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
           <p>наб. Принсенграхт 263- 265, Амстердам</p>
@@ -52,7 +53,7 @@
         </div>
         <img class="overlay" src="images/cover.jpg" alt="Фоновая картинка">
       </section>
-      <section class="lots">      
+      <section class="lots" id="lots_id">      
         <p class="lots__heading">лоты</p> 
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
@@ -73,7 +74,7 @@
         </ul>
         <p class="lots__look-more-link"><a href="#" class="border-bottom">посмотреть больше</a></p>
       </section>
-      <section class="about">      
+      <section class="about" id="about_id">      
         <div class="about_logo">
           <div class="about_circle">
             <img class="about_logo-img" src="images/logo-white.svg" alt="Логотип">
@@ -90,9 +91,21 @@
       </section>
     </main>
     <footer class="footer">
-      <div></div>
-      <div></div>
-      <div></div>
+      <address class="address address_footer_left">
+        <a class="border-bottom" href="tel:+99995555555">+9 999 555 5555</a>
+        <a class="border-bottom" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263- 265, Амстердам</p>
+      </address>
+      <nav class="footer__menu-list">
+        <p class="footer_element"><a href="#">главная</a></p>
+        <p class="footer_element"><a href="#lots_id" class="border-bottom">посмотреть лоты</a></p>
+        <p class="footer_element"><a href="#about_id" class="border-bottom">об аукционе</a></p>
+      </nav>
+      <div class="footer__social-list-item">
+        <a href="https://www.youtube.com"><img class="footer__social-link" src="images/yt.svg" alt="ютуб"></a>
+        <a href="https://vk.com"><img class="footer__social-link" src="images/vk.svg" alt="вконтакте"></a>
+        <a href="https://ru.pinterest.com"><img class="footer__social-link" src="images/pinterest.svg" alt="Pinterest"></a>
+      </div>
     </footer>
   </body>
 </html>
