@@ -8,10 +8,6 @@
     width: 100%;
 }
   
-.letter-spacing_3px {
-  letter-spacing: 3px;
-}
-
 .overlay {
   position: absolute;
   top: 0px;
@@ -88,16 +84,15 @@
 /* стили для блока cover */
 .cover {
   position: relative;
-  color: #fff;
+  color: #fff; 
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  height: 757px;
   background-color: rgb(0 0 0 /0.6);
 }
 
 .cover__title {
-  padding: 165px 20px 128px 50px;
+  padding: 163px 20px 0px 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -107,10 +102,11 @@
   height: 100%;
   width: 100%;
   letter-spacing: 30px;
+  line-height: 120%;
 }
 
 .cover__title_aligned_symbol {
-  letter-spacing: 8px;
+  letter-spacing: 6px;
 }
 
 .cover__title_aligned_text_center {
@@ -128,19 +124,14 @@
 }
 
 .cover__title_aligned_text_right_symbol {
-  letter-spacing: 58px;
+  letter-spacing: 59px;
 }
 
 .cover__description {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 78px;
-  margin-bottom: 51px;
-  margin-right: 49px;
-  text-align: center;
-  font-size: 22px;
-  height: 51px;
+  margin: 125px 49px 50px 78px;
 }
 
 .cover__description-text {
@@ -148,6 +139,8 @@
   width: 100%;
   font-weight: 400;
   margin-right: 79px;
+  font-size: 22px;
+  text-align: center;
 }
 
 .cover__description_button {
@@ -156,7 +149,7 @@
   border: 1px solid white;
   font-weight: 500;
   min-width: 256px;
-  height: 51px;
+  padding: 12px ;
   background-color: transparent;
   color: #fff;
   font-size: 22px;
@@ -189,7 +182,7 @@
 .lots__card-list-item {
   position: relative;
   width: 334px;
-  height: 563px;
+  min-height: 563px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -225,8 +218,14 @@
   width: 100%;
   display: grid;
   grid-template-columns: 334px auto;
-  grid-template-rows: repeat(2, auto);
+  grid-template-areas: 
+    "header header"
+    ". content";
   column-gap: 25px;
+}
+
+.about__content {
+  grid-area: content;
 }
 
 .about_logo {
@@ -237,7 +236,6 @@
 
 .about_circle {
   margin-top: 2px;
-  position: relative;
   border-radius: 50%;
   background-color: black;
   height: 240px;
@@ -245,10 +243,9 @@
 }
 
 .about_logo-img {
-  position: absolute;
+  position: relative; 
   top: 36px;
   left: 47px;
-  z-index: 1;
   height: 168px;
   width: 147px;
 }
@@ -256,9 +253,6 @@
 .about_title {
   display: flex;
   align-items: center;
-}
-
-.about_title_text {
   margin-top: 10px;
   font-size: 40px;
   font-weight: 700;
@@ -266,22 +260,19 @@
   vertical-align: middle;
 }
 
+
 .about_text {
+  padding-top: 9px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
-}
-
-.about_text_up {
-  margin-top: 8px;
   letter-spacing: 0.12px;
 }
 
-.about_text_down {
-  margin-top: 25px;
-  padding-right: 1px;
-  letter-spacing: 0.06px;
-}
 
 /* стили для блока footer */
 .footer {
@@ -299,13 +290,18 @@
 .footer__menu-list {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .footer_element {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.18px;
-  text-align: center;
+  text-decoration: underline;
+}
+
+.footer__menu-list_ul {
+  list-style-type: none
 }
 
 .footer__social-list-item {
