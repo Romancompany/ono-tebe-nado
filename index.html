@@ -12,7 +12,7 @@
 
   <body>
     <!--
-      комменты скопированы со страницы:
+      рекомендации скопированы со страницы Проектная работа «Оно тебе надо»:
       https://practicum.yandex.ru/learn/frontend-developer/courses/5ecb339e-36b3-4099-b71d-796dc66d7f42/sprints/179119/topics/90d1c38e-610d-4c39-be57-50d028144b42/lessons/1277d8eb-8e91-4062-b64d-6fe7358ad732/
     -->
     <!--
@@ -53,7 +53,8 @@ header__logo — контейнер логотипа;
 header__logo-image — картинка с логотипом;
 address — контейнер с адресом;
 header__address — потребуется, чтобы выравнивать блок с адресом. В футере используется другое выравнивание.
-Мы обошлись без использования других классов, где-то применив селекторы вложенности. Вы можете пойти другим путём, это окей.      
+Мы обошлись без использования других классов, где-то применив селекторы вложенности. 
+Вы можете пойти другим путём, это окей.      
     -->
     <header class="header">
       <nav class="header__menu">
@@ -61,14 +62,18 @@ header__address — потребуется, чтобы выравнивать б
           <li class="header__links-list-item_no-bullit">
             <a href="#" class="header__link">главная</a>
           </li>
-          <li><a href="#lots_id" class="header__link">посмотреть лоты</a></li>
-          <li><a href="#about_id" class="header__link">об аукционе</a></li>
+          <li>
+            <a href="#lots__link" class="header__link">посмотреть лоты</a>
+          </li>
+          <li><a href="#about__link" class="header__link">об аукционе</a></li>
         </ul>
       </nav>
       <a class="header__logo"></a>
       <address class="address header__address">
-        <a class="text-underline" href="tel:+99995555555">+9 999 555 5555</a>
-        <a class="text-underline" href="mailto:info@sobaka.ge"
+        <a class="address__link-contact" href="tel:+99995555555"
+          >+9 999 555 5555</a
+        >
+        <a class="address__link-contact" href="mailto:info@sobaka.ge"
           >info@sobaka.ge</a
         >
         <div>наб. Принсенграхт 263- 265, Амстердам</div>
@@ -186,7 +191,7 @@ card__title — заголовок карточки;
 card__text — текст карточки;
 lots__look-more-link — ссылка «Посмотреть больше».
       -->
-      <section class="lots" id="lots_id">
+      <section class="lots" id="lots__link">
         <h2 class="lots__heading">лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
@@ -212,12 +217,13 @@ lots__look-more-link — ссылка «Посмотреть больше».
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
                 <p class="card__text">
-                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-                  переходами на древнеанглийский. В ней одновременно рассказывается
-                  о 16 июня 1904 года и об истории литературы, начиная с античных
-                  времён. И это всё накладывается на эпическую поэму Гомера. Сколько
-                  бы вы поставили на «Улисса» Джеймса Джойса?
-                    </p>
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                  с переходами на древнеанглийский. В ней одновременно
+                  рассказывается о 16 июня 1904 года и об истории литературы,
+                  начиная с античных времён. И это всё накладывается на
+                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                  Джеймса Джойса?
+                </p>
               </article>
             </a>
           </li>
@@ -229,10 +235,10 @@ lots__look-more-link — ссылка «Посмотреть больше».
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
                 <p class="card__text">
-                  Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
-                  похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...
-                  Сколько бы вы на такое поставили, если бы не знали, что это — одна
-                  из революционных работ Кандинского?
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                  котиков... Сколько бы вы на такое поставили, если бы не знали,
+                  что это — одна из революционных работ Кандинского?
                 </p>
               </article>
             </a>
@@ -268,7 +274,7 @@ about__text — блок для текстов секции.
 Другие классы мы не использовали, но вам они могут понадобиться. У задачи несколько решений. 
 Это нормально в гибком мире лэйаутов.        
       -->
-      <section class="about" id="about_id">
+      <section class="about" id="about__link">
         <div class="about__logo">
           <div class="about__circle">
             <img
@@ -320,34 +326,55 @@ footer__social-link — ссылка на социальные сети;
 footer__social-icon — иконка социальной сети.      
     -->
     <footer class="footer">
-      <address class="address address_footer_left">
-        <a class="text-underline" href="tel:+99995555555">+9 999 555 5555</a>
-        <a class="text-underline" href="mailto:info@sobaka.ge"
+      <address class="address address__footer">
+        <a class="address__link-contact" href="tel:+99995555555"
+          >+9 999 555 5555</a
+        >
+        <a class="address__link-contact" href="mailto:info@sobaka.ge"
           >info@sobaka.ge</a
         >
         <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
-      <nav class="footer__menu-list">
-        <ul class="footer__menu-list_ul">
-          <li><a href="#" class="footer_element">главная</a></li>
-          <li><a href="#lots_id" class="footer_element">посмотреть лоты</a></li>
-          <li><a href="#about_id" class="footer_element">об аукционе</a></li>
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li><a href="#" class="footer__menu-link">главная</a></li>
+          <li>
+            <a href="#lots__link" class="footer__menu-link">посмотреть лоты</a>
+          </li>
+          <li>
+            <a href="#about__link" class="footer__menu-link">об аукционе</a>
+          </li>
         </ul>
       </nav>
-      <div class="footer__social-list-item">
-        <a href="https://www.youtube.com" target="_blank"
-          ><img class="footer__social-link" src="images/yt.svg" alt="ютуб"
-        /></a>
-        <a href="https://vk.com" target="_blank"
-          ><img class="footer__social-link" src="images/vk.svg" alt="вконтакте"
-        /></a>
-        <a href="https://ru.pinterest.com " target="_blank"
-          ><img
+      <ul class="footer__social-list">
+        <li class="footer__social-list-item">
+          <a
+            href="https://www.youtube.com"
+            target="_blank"
             class="footer__social-link"
-            src="images/pinterest.svg"
-            alt="Pinterest"
-        /></a>
-      </div>
+            ><img class="footer__social-icon" src="images/yt.svg" alt="ютуб"
+          /></a>
+        </li>
+        <li class="footer__social-list-item">
+          <a href="https://vk.com" target="_blank" class="footer__social-link"
+            ><img
+              class="footer__social-icon"
+              src="images/vk.svg"
+              alt="вконтакте"
+          /></a>
+        </li>
+        <li class="footer__social-list-item">
+          <a
+            href="https://ru.pinterest.com"
+            target="_blank"
+            class="footer__social-link"
+            ><img
+              class="footer__social-icon"
+              src="images/pinterest.svg"
+              alt="Pinterest"
+          /></a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
