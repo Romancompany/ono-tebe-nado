@@ -64,7 +64,7 @@
   text-decoration: underline;
 }
 
-.header__link:hover {
+.header__link_active {
   text-decoration: none;
 }
 
@@ -106,7 +106,6 @@
   justify-content: space-between;
   font-size: 100px;
   font-weight: 700;
-  line-height: 115%;
   height: 100%;
   width: 100%;
   letter-spacing: 30px;
@@ -326,6 +325,7 @@
 /* стили для блока footer */
 .footer {
   margin-top: 180px;
+  margin-bottom: 88px;
   padding: 0;
   width: 100%;
   display: grid;
@@ -343,17 +343,17 @@
 }
 
 .footer__menu-list {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.18px;
   list-style-type: none;
 }
 
 .footer__menu-link {
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.18px;
   text-decoration: underline;
 }
 
-.footer__menu-link:hover {
+.footer__menu-link-active {
   text-decoration: none;
 }
 
@@ -365,9 +365,6 @@
 
 .footer__social-list-item {
   list-style-type: none;
-}
-
-.footer__social-link {
 }
 
 .footer__social-icon {
