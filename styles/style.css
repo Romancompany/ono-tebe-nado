@@ -81,7 +81,6 @@
 
 /* стили для блока cover */
 .cover {
-  z-index: -1;
   position: relative;
   margin-top: 96px;
   color: #fff;
@@ -209,27 +208,21 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: rgb(0 0 0 /0.6);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card__title {
@@ -259,7 +252,7 @@
 
 /* стили для блока about */
 .about {
-  margin-top: 180px;
+  margin-top: 182px;
   padding: 0px 24px 0px;
   width: 100%;
   display: grid;
@@ -281,25 +274,24 @@
 }
 
 .about__circle {
-  margin-top: 2px;
   border-radius: 50%;
   background-color: black;
   height: 240px;
   width: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about__logo-image {
   position: relative;
-  top: 36px;
-  left: 47px;
-  height: 168px;
-  width: 147px;
+  width: 148px;
 }
 
 .about__title {
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 8px;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
@@ -308,7 +300,6 @@
 
 .about__text {
   padding-top: 9px;
-  min-height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -316,6 +307,7 @@
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.12px;
+  gap: 24px;
 }
 
 /* стили для блока footer */
